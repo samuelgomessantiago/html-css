@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhando caixas verticalmente</title>
+    <style>
+        /* Container pai,  com position: relative*/
+        #container{
+            position: relative;
+            height: 500px;
+            background-color: rgb(243, 227, 9);
+            padding: 10px;
+        }
+        /* Container filho com position: absolute*/
+        #conteudo{
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: blueviolet;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /* com isso podemos mudar a posição do nosso container filho, usando left, top, buttom, right, usando %, e movelo para onde eu quero, mas o container filho vai levar em conta a centralização do seu canto superior esquerdo, por isso ele não irá ficar como queremos.*/
+
+        /* Pra isso usamos tambem o transform junto com o translate, colocando % negativa, para alinhar bem o container filho.*/
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+            
+        </article>
+    </section>
+</body>
+</html>
