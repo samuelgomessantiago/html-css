@@ -53,20 +53,43 @@ section{
     font-family: var(--font3);
 }
 
+section > p{
+    padding-bottom: 2em;
+    font-size: 1.5em;
+}
+
 section.normal{
     background-color: white;
     color: black;
 }
 
+section.imagem{
+    background-color: rgb(10, 10, 10);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.774);
+}
+
 section.imagem > p{
     display: inline-block;
     padding: 5px;
-    background-color: rgb(95, 93, 93);
+    background-color: rgba(39, 38, 38, 0.5);
+    text-shadow: 1px 1px 0px black;
 }
 
-section.imagem{
-    background-color: rgb(68, 67, 67);
-    color: white;
+section#img-01{
+    background-image: url('imagens/background001.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img-02{
+    background-image: url('imagens/background002.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 footer{
