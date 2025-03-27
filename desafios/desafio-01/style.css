@@ -58,7 +58,7 @@ section > p{
     font-size: 1.5em;
 }
 
-section.normal{
+section.normal{ 
     background-color: white;
     color: black;
 }
