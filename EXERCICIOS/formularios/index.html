@@ -32,24 +32,27 @@
 <body>
     <form method="post" autocomplete="on">
         <h1>FORMULARIO</h1>
-        <div class="nome">
-            <label for="nome">Nome:</label>
-            <input type="text" name="text" id="nome" required minlength="5" maxlength="10" size="15" autocomplete="username">
-        </div>
-        <div class="senha">
-            <label for="senha">Senha:</label>
-            <input type="password" name="password" id="senha" required minlength="5" maxlength="10" size="15" autocomplete="current-password">
-        </div>
-        <div>
-            <label for="media">média:</label>
-            <input type="number" name="media" id="media" required max="10" min="1" placeholder="0 a 10">
-        </div>
-        <div>
-            <label for="cor">Escolha uma cor:</label>
-            <input type="color" name="cor" id="cor" required>
-        </div>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
+        <fieldset>
+            <legend>LOGIN</legend>
+            <div class="nome">
+                <label for="nome">Nome:</label>
+                <input type="text" name="text" id="nome" required minlength="5" maxlength="10" size="15" autocomplete="username">
+            </div>
+            <div class="senha">
+                <label for="senha">Senha:</label>
+                <input type="password" name="password" id="senha" required minlength="5" maxlength="10" size="15" autocomplete="current-password">
+            </div>
+            <div>
+                <label for="media">média:</label>
+                <input type="number" name="media" id="media" required max="10" min="1" placeholder="0 a 10" autocomplete="cc-number">
+            </div>
+            <div>
+                <label for="cor">Escolha uma cor:</label>
+                <input type="color" name="cor" id="cor" required>
+            </div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
     </form>
 </body>
 </html>
