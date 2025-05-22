@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <div id="campos">
+        <div class="formulario">
+            <label for="num">Numero:</label>
+            <input type="range" name="range" id="num" min="0" max="10" value="5" oninput="val.innerHTML=Number (num.value)">
+            <output id="val">5</output>
+        </div>
+        <div>
+            <label for="num">Em que ano voce nascel?</label>
+            <input type="number" name="number" id="Inum" min="1900" max="2025" oninput="calcIdade()">
+        </div>
+        <div>
+            <label for="idade">Sua idade:</label>
+            <output id="idade">0</output>
+        </div>
+    </div>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            idade.innerHTML = Number(atual) - Number(Inum.value)
+        }
+    </script>
+</body>
+</html>
