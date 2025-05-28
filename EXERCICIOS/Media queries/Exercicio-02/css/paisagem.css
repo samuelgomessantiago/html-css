@@ -1,3 +1,13 @@
 @charset "UTF-8";
 
 /*Aparelho detado (Landscape)*/
+
+
+body{
+    background-image: url(../images/cev-landscape.jpg);
+    background-position: left bottom;
+}
+
+#texto{
+    display: none;
+}
